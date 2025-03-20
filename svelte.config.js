@@ -7,7 +7,7 @@ const BASE_PATH = IS_DEV ? '' : process.env.BASE_PATH || '';
 
 const getEntries = () => {
 	const entries = ['/', '/1', '/2', '/3', '/4', '/5', '/6', '/7', '/8'];
-	return BASE_PATH ? entries.map((entry) => `/${BASE_PATH}${entry}`) : entries;
+	return entries;
 };
 
 /** @type {import('@sveltejs/kit').Config}*/
