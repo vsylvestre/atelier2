@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+	export let data;
+</script>
+
+<div class="mx-auto flex max-w-400 flex-col gap-16 py-100 bp:max-w-600 bp:py-200">
+	{#each data.metadata as text}
+		{#if text}
+			<p>
+				{text}
+			</p>
+		{/if}
+	{/each}
+</div>

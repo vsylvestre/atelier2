@@ -1,0 +1,22 @@
+{
+	"[svelte]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"tailwindCSS.experimental.classRegex": [
+		["Classes \\=([^;]*);", "'([^']*)'"],
+		["Classes \\=([^;]*);", "\"([^\"]*)\""],
+		["Classes \\=([^;]*);", "\\`([^\\`]*)\\`"],
+		["Class \\=([^;]*);", "'([^']*)'"],
+		["Class \\=([^;]*);", "\"([^\"]*)\""],
+		["Class \\=([^;]*);", "\\`([^\\`]*)\\`"]
+	]
+}
