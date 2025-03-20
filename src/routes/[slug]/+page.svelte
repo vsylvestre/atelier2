@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { beforeNavigate } from '$app/navigation';
 	import { fade } from 'svelte/transition';
+	import { base } from '$app/paths';
 	import Block from '$lib/components/Block.svelte';
 	import Pointer from '$lib/components/Pointer.svelte';
 
@@ -60,7 +61,7 @@
 	{#key map}
 		<div class="relative max-h-full max-w-full" style:aspect-ratio={aspect}>
 			<img
-				src="/map/{data.slug}.jpeg"
+				src="{base}/map/{data.slug}.jpeg"
 				alt={`map ${data.slug}`}
 				class:opacity-0={!aspect}
 				use:computeAspectRatio

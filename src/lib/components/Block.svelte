@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { toCanvas } from 'qrcode';
 	import { page } from '$app/state';
+	import { base } from '$app/paths';
 	import { createDialog, melt } from '@melt-ui/svelte';
-	import ArrowRight from './ArrowRight.svelte';
 	import { isBelowBreakpoint } from '$lib/stores/isBelowBreakpoint';
+	import ArrowRight from './ArrowRight.svelte';
 
 	export let block: {
 		filename: string;
@@ -67,7 +68,7 @@
 			>
 				<div class="size-full overflow-hidden">
 					<img
-						src="/images/{page.data.slug}/{block.filename}.webp"
+						src="{base}/images/{page.data.slug}/{block.filename}.webp"
 						class="size-full object-contain"
 						alt={block.filename}
 					/>
