@@ -5,11 +5,6 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const IS_DEV = process.argv.includes('dev');
 const BASE_PATH = IS_DEV ? '' : process.env.BASE_PATH || '';
 
-const getEntries = () => {
-	const entries = ['/', '/1', '/2', '/3', '/4', '/5', '/6', '/7', '/8'];
-	return entries;
-};
-
 /** @type {import('@sveltejs/kit').Config}*/
 const config = {
 	preprocess: sequence([vitePreprocess(), preprocessMeltUI()]),
@@ -19,9 +14,6 @@ const config = {
 		}),
 		paths: {
 			base: BASE_PATH
-		},
-		prerender: {
-			entries: getEntries()
 		}
 	}
 };

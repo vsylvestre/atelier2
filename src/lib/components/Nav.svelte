@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 	import ArrowRight from './ArrowRight.svelte';
 
 	const LAST_PAGE = 8;
@@ -27,7 +28,7 @@
 		class:left-0={side === 'left'}
 	>
 		{#if Number.isInteger(page)}
-			<a href={page === 0 ? '/' : `/${page}`}>
+			<a href={page === 0 ? base || '/' : `${base}/${page}`}>
 				{@render arrow(side)}
 			</a>
 		{:else}
