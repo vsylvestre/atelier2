@@ -19,6 +19,7 @@ export const load = async () => {
 		)
 	);
 	return {
+		slug: '1',
 		metadata
 	};
 };

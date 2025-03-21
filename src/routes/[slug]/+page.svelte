@@ -11,7 +11,7 @@
 	$: map = data.map;
 
 	let intro =
-		data.slug === '1' &&
+		data.slug === '2' &&
 		(typeof sessionStorage !== 'undefined' ? sessionStorage.getItem('intro') !== 'false' : false);
 	let aspect: string | null = null;
 

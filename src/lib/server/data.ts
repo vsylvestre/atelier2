@@ -1,6 +1,6 @@
 export const data = [
 	{
-		slug: '1',
+		slug: '2',
 		map: [
 			{
 				filename: 'IMG_6605',
@@ -45,7 +45,7 @@ export const data = [
 		]
 	},
 	{
-		slug: '2',
+		slug: '3',
 		map: [
 			{
 				filename: 'IMG_6620 (1)',
@@ -122,7 +122,7 @@ export const data = [
 		]
 	},
 	{
-		slug: '3',
+		slug: '4',
 		map: [
 			{
 				filename: 'IMG_6673',
@@ -175,7 +175,7 @@ export const data = [
 		]
 	},
 	{
-		slug: '4',
+		slug: '5',
 		map: [
 			{
 				filename: 'IMG_6649',
@@ -268,7 +268,7 @@ export const data = [
 		]
 	},
 	{
-		slug: '5',
+		slug: '6',
 		map: [
 			{
 				filename: 'IMG_6642 (1)',
@@ -353,7 +353,7 @@ export const data = [
 		]
 	},
 	{
-		slug: '6',
+		slug: '7',
 		map: [
 			{
 				filename: 'IMG_6641 (1)',
@@ -422,7 +422,7 @@ export const data = [
 		]
 	},
 	{
-		slug: '7',
+		slug: '8',
 		map: [
 			{
 				filename: 'IMG_6625',

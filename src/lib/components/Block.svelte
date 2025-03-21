@@ -95,7 +95,7 @@
 					{#if description}
 						<div class="_meta">
 							<h2>Méta-description</h2>
-							<p>{description}</p>
+							<p class="line-clamp-6 bp:line-clamp-none">{description}</p>
 						</div>
 					{/if}
 					{#if block.url}

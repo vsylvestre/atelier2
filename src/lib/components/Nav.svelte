@@ -3,7 +3,7 @@
 	import { base } from '$app/paths';
 	import ArrowRight from './ArrowRight.svelte';
 
-	const LAST_PAGE = 8;
+	const LAST_PAGE = 9;
 
 	$: currentPage = Number($page.data.slug ?? '0');
 	$: prevPage = currentPage <= 0 ? null : currentPage - 1;
